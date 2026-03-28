@@ -1,7 +1,7 @@
 # SISTEMA-DE-ESCOLA-TECNICA
 
 Sistema de banco de dados escolar baseado na visão do aluno.
-Projeto criado para estudo de modelagem de dado, SQL e desenvolvimento de sitemas.
+Projeto criado para estudo de modelagem de dado, SQL e desenvolvimento de sistemas.
 
 #STATUS
  --Em desenvolvimento--
