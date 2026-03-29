@@ -3,19 +3,19 @@
 Sistema de banco de dados escolar baseado na visão do aluno.
 Projeto criado para estudo de modelagem de dado, SQL e desenvolvimento de sistemas.
 
-#STATUS
- --Em desenvolvimento--
+## STATUS
+Em desenvolvimento...
  
-#Sobre o projeto
+## Sobre o projeto
 Esté sistema simula um ambiente escolar aonde foi baseado na visão do aluno, processos como administrativos e outros, foram abstraídos, até para facilitar o entendimento do projeto como um todo.
 
-#Modelagem conceitual
+## Modelagem conceitual
 Imagem.
 ![Ver diagrama](diagrama_v1.jpeg)
 Veja a explicação completa aqui.
 ![modelagem conceitual](docs/modelagem_conceitual.md)
 
-#Estruturaa do projeto
+## Estruturaa do projeto
 - diagramas -> imagens dos diagramas
 - docs -> explicações detalhadas
 - sql -> scripts do banco
