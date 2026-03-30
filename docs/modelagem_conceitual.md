@@ -1,42 +1,61 @@
 # Modelagem Conceitual
 
-Explicação do sistema escolar baseado na visão do aluno.
+Esse documento descreve as entidades e seus relacionamentos no sistema.
 
-Criei esse diagrama utilizando draw.io.
+## O diagrama foi desenvolvido utilizando draw.io.
+![Diagrama](../diagrama_v1.jpeg)
 
-[Diagrama](../diagrama_v1.jpeg)
+Este diagrama representa a estrutura de um sistema de escola técnica, focado na visão do aluno. Partes como administrativas e outras foram abstraídas.
 
-Esse diagrama representa a estrutura de um sistema de escola técnica, focado na visão do aluno. Partes como administrativas e outras foram abstraídas.
-
-O foco desse diagrama é para entender como que as entidades se relacionam dentro do sistema.
+O foco deste diagrama é compreender como as entidades se relacionam no sistema.
 
 
-## 📌observações:
+## 📌 Observações:
 - As PKs estão destacadas em verde.
 - As FKs estão destacadas em roxo.
-- Nessa explicação o foco é sobre os atributos e relacionamentos.
-- A explicação das entidades começa a partir do segundo atributo, sem detalhar a chave primária.
+- A explicação foca nas entidades, atributos e relacionamentos, sem detalhar as chaves primárias.
 
 # Explicação das entidades
 
-## Aluno
-Representa o estudante no sitema.
-Atributos:
+ ## Aluno
+### Descrição: Representa o estudante no sistema.
+### Atributos:
 - Nome
 - CPF
 - Data de nascimento
 - Telefone
-- Email
-- Endereco
+- E-mail
+- Endereço
 
  ## Matrículas
-Relaciona o aluno com a turma.
-Cada atributo indica:
-- FK ID aluno: identificador do aluno
-- FK ID turma: identificador da turma
-- Data matricula: Data que foi criada a matrícula
-- Status: indica se a matricula está Ativa, Trancada, Em espera ou Cancelada.
+Relaciona o aluno a uma turma.
+### Atributos:
+- FK ID aluno: Identificador do aluno
+- FK ID turma: Identificador da turma
+- Data da matrícula: Data que foi criada a matrícula
+- Status: Indica se a matrícula está Ativa, Trancada, Em espera ou Cancelada
+  ### Observações:
+- A matrícula serve para vincular os alunos com as turmas. O curso não foi incluído na matrícula, pois já está vinculado à turma, evitando redundância de dados.
 
+ ## Professores
+### Descrição: Representa o professor no sistema.
+### Atributos:
+ - Nome
+ - CPF
+ - Telefone
+ - E-mail
+ - Especialidade: Área de atuação ou formação
+ 
+  ## Cursos
+### Descrição: Representa os cursos oferecidos na instituição.
+Um curso pode possuir várias turmas.
+Um curso pode possuir várias matérias.
+### Atributos:
+- Nome: Nome de cada curso
+- Carga horária: Quantas horas o curso tem no total
+- Início: Data de início do curso
+- Término: Data de fim de curso
+ 
 ## 🚨 Em desenvolvimento
 A documentação ainda não está completa.
 As explicações e alterações serão adicionadas progressivamente.
