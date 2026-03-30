@@ -56,5 +56,6 @@ Um curso pode possuir várias turmas e matérias.
 - Término: Data de fim de curso
  
 ## 🚨 Em desenvolvimento
-A documentação ainda não está completa.
-As explicações e alterações serão adicionadas progressivamente.
+Este é um modelo inicial da modelagem conceitual.
+
+Novas versões serão adicionadas com melhorias, correções e ajustes conforme o desenvolvimento do sistema.
