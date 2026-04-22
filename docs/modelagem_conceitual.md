@@ -65,6 +65,51 @@ horário e período das aulas.
 - Data de fim: Data de término  das aulas
 - (FK) ID do curso: Identifica qual curso a turma pertence
   
+ ## Professor_Turma
+### Descrição: Representa o relacionamento entre professores e turmas.
+Define quais professores estão responsáveis por quais turmas.
+### Atributos:
+- (FK)Id_Professor: Identifica o professor
+- (FK)Id_Turma: Identifica a turma
+### Observações:
+Resolve o relacionamento N:N entre Professor e Turma.
+Um professor pode lecionar várias turmas
+Uma turma pode ter mais de um professor
+
+## Matéria
+### Descrição: Representa as matérias que fazem parte de um curso.
+Uma matéria pode estar presente em várias turmas e ser ensinada por diferentes professores.
+### Atributos:
+- Nome: Nome da matéria 
+- Carga_horaria: Quantidade de horas da matéria 
+- Curso_id: Identifica o curso ao qual a matéria pertence
+### Observações:
+Uma matéria pertence a um curso (1:N)
+Uma matéria aparecer em várias turmas, evitando repetições de matérias no sistema.
+
+## Nota
+### Descrição: Representa as notas dos alunos em uma matéria dentro de uma turma.
+### Atributos:
+- Id_Matricula: Identifica o aluno na  
+- Nota: valor da nota do aluno 
+- Id_matéria: Identifica a matéria
+- Tipo: Avaliação (prova, trabalho, etc.)
+### Observações:
+Um aluno pode ter várias notas.
+Relaciona Matrícula com matéria,pemitindo controle detalhado do desempenho do aluno.
+
+## Pagamento
+## Descrição: Representa os pagamentos realizados pelo aluno referentes à sua matrícula no curso.
+Permite controlar se o aluno está em dia com suas obrigações financeiras.
+### Atributos:
+- Id_aluno: Identifica qual aluno
+- Valor: valor a ser pago
+- Data_pagamento: Data em que o pagamento foi realizado
+- Status: Indica a situação do pagamento (pago, pendente, atrasado)
+- Forma: Forma utilizada (pix, boleto, cartão, etc.)
+### Observações:
+Um aluno pode ter vários pagamentos (1:N)
+Relacionado diretamente com a entidade aluno, permite controle financeiro do aluno no sistema.
  
 ## 🚨 Em desenvolvimento
 Este é um modelo inicial da modelagem conceitual.
